@@ -1,12 +1,43 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  background-color: #eee;
-  height: 12rem;
+  padding: 2rem 30%;
+  margin: 0 -30%;
+  box-shadow: 0px 3px 10px rgba(108, 99, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(108, 99, 255, 0.2);
+`;
+
+export const Link = styled.a`
+  font-size: 2rem;
+  margin: 1rem;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2 ease-in-out;
+  &:hover {
+    color: #6c63ff;
+  }
+`;
+
+export const HeaderIcons = styled.div`
+  display: flex;
+`;
+export const Icon = styled.img`
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  opacity: 80%;
+  transition: all 0.2 ease-in-out;
+
+  &:hover {
+    opacity: 100%;
+  }
 `;
 
 export const Section = styled.section`
-  margin: 8rem 15%;
+  margin: 15rem 0;
   display: flex;
 `;
 
@@ -20,7 +51,7 @@ export const Img = styled.img`
   height: 25rem;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 5px 25px rgba(108, 99, 255, 0.3);
 `;
 
 export const TextWrapper = styled.div`
@@ -30,61 +61,13 @@ export const TextWrapper = styled.div`
 
 export const Title = styled.h1`
   font-size: 4.2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 `;
 
 export const Subtitle = styled.h3`
   font-size: 2.8rem;
   line-height: 4rem;
-  //TODO grid style is used only for the skills section(fix this)
   grid-column-start: 1;
   grid-column-end: 3;
-`;
-
-//TODO fix this diferent sections styles
-export const SectionSkills = styled.section`
-  margin: 8rem 15%;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-`;
-
-export const Skills = styled.div`
-  display: flex;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
-  margin: 2rem 6rem 0 0;
-`;
-
-export const SkillCard = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  border: 1px solid #eee;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    background-color: #eee;
-  }
-`;
-
-export const SkillLogo = styled.img`
-  width: 10rem;
-  height: 8rem;
-  object-fit: contain;
-`;
-
-export const SkillTitle = styled.h5`
-  font-size: 2.4rem;
-  margin-top: 2rem;
-`;
-
-export const SkillDescription = styled.h5`
-  font-size: 2rem;
-  line-height: 3rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 `;
