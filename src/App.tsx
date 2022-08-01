@@ -1,9 +1,9 @@
 import React from 'react';
-import Portfolio from "./components/pages/portfolio/Portfolio"
+import Home from "./components/pages/home/Home"
 function App() {
   return (
     <div className="App">
-      <Portfolio />
+      <Home />
     </div>
   );
 }

@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  margin: 10rem 0;
+  margin: 0 -30% 8rem -30%;
+  padding: 5rem 30% 8rem 30%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 4rem;
+  background: linear-gradient(#e66465, #9198e5);
+  color: #fff;
 `;
 
 export const Subtitle = styled.h3`
@@ -22,19 +25,30 @@ export const SkillImages = styled.div`
 `;
 
 export const SkillCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  border: 1px solid rgba(108, 99, 255, 0.2);
-  box-shadow: 0px 3px 10px rgba(108, 99, 255, 0.2);
-  transition: all 0.2s ease-in-out;
+  position: relative;
 
-  &:hover {
-    box-shadow: 0px 5px 15px rgba(108, 99, 255, 0.4);
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -9999;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #05012e;
+    padding: 1rem;
+    height: 16rem;
+    border-radius: 0.5rem;
+    background-color: #fefefe;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
+    }
   }
 
   img {
