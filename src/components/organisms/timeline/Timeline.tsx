@@ -18,10 +18,6 @@ const Timeline: React.FC = () => {
 					<img src={cup} alt="cup coffe" />
 					<p>Desenvolvedora FrontEnd na Software House <a target="_blank" href="https://www.espressolabs.com.br">Espresso Labs</a></p>
 				</S.LineItem>
-
-
-
-
 				<S.LineItem>
 					<span>
 						<p>2019</p>
@@ -45,11 +41,10 @@ const Timeline: React.FC = () => {
 					<img src={farm} alt="farm" />
 					<p>Engenheira de Software na <a target="_blank" href="https://www.gaivota.ai/">Gaivota</a></p>
 				</S.LineItem>
-				<span />
-				<span />
-				<span />
-				<span />
 			</S.Line>
+			{/* <S.Bubbles /> */}
+			{/* <S.Bubbles /> */}
+			{/* <S.Bubbles /> */}
 		</S.Section>
 
 	)

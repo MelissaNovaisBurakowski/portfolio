@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   margin: 5rem 0 20rem;
+  position: relative;
 `;
 
 //TODO fix subtitle style duplicated
@@ -9,13 +10,13 @@ export const Subtitle = styled.h3`
   font-size: 2.8rem;
   line-height: 4rem;
   margin-bottom: 2rem;
-  color: #6c63ff;
+  color: #e66465;
 `;
 
 export const Line = styled.div`
   height: 0.3rem;
   width: 100%;
-  background-color: rgba(108, 99, 255, 0.4);
+  background-color: rgba(108, 99, 255, 0.3);
   border-radius: 1rem;
   margin: 18rem 0;
   position: relative;
@@ -46,7 +47,7 @@ export const LineItem = styled.div`
     text-align: center;
 
     a {
-      color: #6c63ff;
+      color: #e66465;
       font-style: italic;
       text-decoration: none;
     }
@@ -93,5 +94,28 @@ export const LineItem = styled.div`
   }
   &:nth-child(4) {
     left: 85%;
+  }
+`;
+
+export const Bubbles = styled.div`
+  width: 20rem;
+  height: 20rem;
+  background-color: #e66465;
+  opacity: 0.1;
+  border-radius: 50%;
+  position: absolute;
+  background: linear-gradient(180deg, #e66465, #9198e5);
+
+  &:nth-of-type(2) {
+    top: 20rem;
+    left: -40rem;
+    transform: scale(2.5);
+  }
+
+  &:nth-of-type(3) {
+    right: -20rem;
+    top: -10rem;
+    transform: scale(3);
+    z-index: -99;
   }
 `;

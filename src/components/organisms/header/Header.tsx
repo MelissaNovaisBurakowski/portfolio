@@ -9,13 +9,19 @@ const Header: React.FC = () => {
 		<S.Header>
 			<div>
 				<S.Link href="#">Skills</S.Link>
-				<S.Link href="#">Timeline</S.Link>
-				<S.Link href="#">Contato</S.Link>
+				<S.Link href="#" target="_blank">Timeline</S.Link>
 			</div>
 			<S.HeaderIcons>
-				<S.Icon src={linkedin} />
-				<S.Icon src={github} />
-				<S.Icon src={medium} />
+				<a href="https://www.linkedin.com/in/melissa-novais-0bb203151/" target="_blank">
+					<S.Icon src={linkedin} />
+				</a>
+				<a href="https://github.com/MelissaNovaisBurakowski" target="_blank">
+					<S.Icon src={github} />
+				</a>
+				<a href="https://medium.com/@mf.novais.98" target="_blank">
+					<S.Icon src={medium} />
+				</a>
+
 			</S.HeaderIcons>
 
 		</S.Header>

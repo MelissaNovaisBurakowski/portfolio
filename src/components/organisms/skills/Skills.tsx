@@ -25,19 +25,19 @@ const Skills: React.FC = () => {
 	const skills = {
 		[SkillOptions.REACT]: {
 			title: "React",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+			description: "No momento o React é minha biblioteca/framework web favorito! Esse site foi produzido usando React. Utilizo o react desde 2020 e foi amor a primeira vista! Já fiz diversos projetos utlizando essa lib. Já consegui gerar PDFs customizados, desenhar poligonos em mapas utilizando GeoJSON, Dashboards e muito mais!"
 		},
 		[SkillOptions.VUE]: {
 			title: "Vue",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+			description: "Esse foi o primeiro framework web com que tive contato e ele tem um lugar especial no meu coração s2. Já fiz vários dashboards para tudo quanto era aplicação. Também já codei plataformas de cursos online, auditoria e outros projetos pessoais."
 		},
 		"ionic": {
 			title: "Ionic",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+			description: "Utilizei o Ionic + Cordova para realizar diversos projetos mobiles. Só de redes sociais, foram 3! Eram projetos bem complexos, onde era possível postar fotos e vídeos, marcar pessoas, curtir e comentar. Alguns eram mais voltados para área de treinamento de funcionários, com uma gameficação do aprendizado de novos produtos e engajamento dos colaboradores."
 		},
 		"angular": {
 			title: "Angular",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+			description: "Utilizei muito esse framework em meados de 2019. Gostei principalmente da organização que ele traz, ainda mais trabalhando com um grupo maior de pessoas!"
 		},
 		"js": {
 			title: "JavaScript",
@@ -49,7 +49,7 @@ const Skills: React.FC = () => {
 		},
 		"node": {
 			title: "Node",
-			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+			description: "Meu modo favorito de codar no backend! Já utilizei muitas linguagens de programação no back, mas foi o Node que me conquistou XD. Tenho utilizado o Node para todos os projetos backend que faço. Já implementei algumas features/ajustes em projetos profissionais e fiz diversos projetos pessoais completos com ele."
 		}
 	}
 
@@ -122,7 +122,7 @@ const Skills: React.FC = () => {
 					selectedSkill && (
 						<>
 							<h5>{skills[selectedSkill].title}</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+							<p>{skills[selectedSkill].description}</p>
 						</>
 					)
 				}
