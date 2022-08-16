@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   margin: 0 -30% 8rem -30%;
-  padding: 5rem 30% 8rem 30%;
+  padding: 5rem 30% 10rem 30%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 4rem;
-  background: linear-gradient(#e66465, #9198e5);
+  /* background: linear-gradient(#e66465, #9198e5); */
+  background-color: #e66465;
   color: #fff;
+  position: relative;
 `;
 
 export const Subtitle = styled.h3`
@@ -75,5 +77,26 @@ export const SkillDetails = styled.div`
     font-size: 2rem;
     line-height: 3rem;
     margin-top: 2rem;
+  }
+`;
+
+export const Waves = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 59px;
+  }
+
+  .shape-fill {
+    fill: #fcfcfc;
   }
 `;

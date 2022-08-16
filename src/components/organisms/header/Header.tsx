@@ -7,10 +7,10 @@ import linkedin from "../../../assets/linkedin.svg";
 const Header: React.FC = () => {
 	return (
 		<S.Header>
-			<div>
+			{/* <div>
 				<S.Link href="#">Skills</S.Link>
 				<S.Link href="#" target="_blank">Timeline</S.Link>
-			</div>
+			</div> */}
 			<S.HeaderIcons>
 				<a href="https://www.linkedin.com/in/melissa-novais-0bb203151/" target="_blank">
 					<S.Icon src={linkedin} />

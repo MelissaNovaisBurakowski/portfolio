@@ -97,25 +97,25 @@ export const LineItem = styled.div`
   }
 `;
 
-export const Bubbles = styled.div`
-  width: 20rem;
-  height: 20rem;
-  background-color: #e66465;
-  opacity: 0.1;
-  border-radius: 50%;
-  position: absolute;
-  background: linear-gradient(180deg, #e66465, #9198e5);
+export const Waves = styled.div`
+  margin: 0rem -30%;
 
-  &:nth-of-type(2) {
-    top: 20rem;
-    left: -40rem;
-    transform: scale(2.5);
+  position: absolute;
+  bottom: -130%;
+  left: 0;
+  width: 160%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 59px;
   }
 
-  &:nth-of-type(3) {
-    right: -20rem;
-    top: -10rem;
-    transform: scale(3);
-    z-index: -99;
+  .shape-fill {
+    fill: #e66465;
   }
 `;

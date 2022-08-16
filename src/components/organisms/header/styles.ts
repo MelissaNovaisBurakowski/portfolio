@@ -4,9 +4,10 @@ export const Header = styled.header`
   padding: 2rem 30%;
   margin: 0 -30%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
 `;
 
 export const Link = styled.a`
@@ -14,10 +15,11 @@ export const Link = styled.a`
   margin: 1rem;
   color: #fff;
   text-decoration: none;
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
 
   &:hover {
     text-decoration: underline;
+    color: #e66465;
   }
 `;
 
