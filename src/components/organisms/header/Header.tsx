@@ -18,9 +18,9 @@ const Header: React.FC = () => {
 				<a href="https://github.com/MelissaNovaisBurakowski" target="_blank">
 					<S.Icon src={github} />
 				</a>
-				<a href="https://medium.com/@mf.novais.98" target="_blank">
+				{/* <a href="https://medium.com/@mf.novais.98" target="_blank">
 					<S.Icon src={medium} />
-				</a>
+				</a> */}
 
 			</S.HeaderIcons>
 

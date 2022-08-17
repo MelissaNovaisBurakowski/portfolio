@@ -33,6 +33,11 @@ export const SkillCard = styled.div`
     position: absolute;
     opacity: 0;
     z-index: -9999;
+
+    &:checked + label {
+      border: 2px solid rgba(108, 99, 255, 0.7);
+      box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
+    }
   }
 
   label {
@@ -42,10 +47,11 @@ export const SkillCard = styled.div`
     align-items: center;
     color: #05012e;
     padding: 1rem;
-    height: 16rem;
+    height: 14rem;
+    width: 13rem;
     border-radius: 0.5rem;
-    background-color: #fefefe;
-    transition: all 0.2s ease-in-out;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.2s ease-in-out;
     cursor: pointer;
 
     &:hover {

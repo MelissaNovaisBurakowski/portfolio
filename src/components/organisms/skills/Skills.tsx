@@ -62,7 +62,7 @@ const Skills: React.FC = () => {
 			<S.Subtitle>Skills Técnicas</S.Subtitle>
 			<S.SkillImages>
 				<S.SkillCard>
-					<input type="radio" id="react" name="skill" value={SkillOptions.REACT} onChange={() => changeSelectedSkill(SkillOptions.REACT)} />
+					<input type="radio" id="react" name="skill" value={SkillOptions.REACT} checked={selectedSkill === SkillOptions.REACT} onChange={() => changeSelectedSkill(SkillOptions.REACT)} />
 					<label htmlFor="react" >
 						<img src={react} alt="react logo" />
 						<p>React</p>
