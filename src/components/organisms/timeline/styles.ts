@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   margin: 5rem 0 20rem;
+  position: relative;
 
   @media screen and (max-width: 700px) {
     margin-bottom: 0;
@@ -41,6 +42,7 @@ export const LineItem = styled.div`
   align-items: center;
   flex-direction: column;
   text-align: center;
+  width: 50rem;
 
   span {
     width: 1rem;
@@ -132,7 +134,7 @@ export const LineItem = styled.div`
 export const Waves = styled.div`
   margin: 0rem -30%;
   position: absolute;
-  bottom: -112%;
+  bottom: -28rem;
   left: 0;
   width: 160%;
   overflow: hidden;
@@ -151,7 +153,6 @@ export const Waves = styled.div`
   }
 
   @media screen and (max-width: 700px) {
-    width: 130%;
-    bottom: -90%;
+    bottom: -10rem;
   }
 `;
