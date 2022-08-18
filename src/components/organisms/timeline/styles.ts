@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   margin: 5rem 0 20rem;
-  position: relative;
+
+  @media screen and (max-width: 700px) {
+    margin-bottom: 0;
+  }
 `;
 
 //TODO fix subtitle style duplicated
@@ -16,35 +19,47 @@ export const Subtitle = styled.h3`
 export const Line = styled.div`
   height: 0.3rem;
   width: 100%;
-  background-color: rgba(108, 99, 255, 0.3);
+  background-color: rgba(113, 245, 128, 0.3);
   border-radius: 1rem;
   margin: 18rem 0;
+  display: flex;
+  justify-content: space-between;
   position: relative;
+
+  @media screen and (max-width: 700px) {
+    height: 60rem;
+    width: 0.3rem;
+    margin: 3rem 0 0 2rem;
+    flex-direction: column;
+    padding: 3rem 0 5rem 0;
+  }
 `;
 
 export const LineItem = styled.div`
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 
   span {
     width: 1rem;
     height: 1rem;
-    background-color: #6c63ff;
+    background-color: #71f580;
     border-radius: 50%;
     position: absolute;
-    bottom: 0;
+    bottom: -0.4rem;
+    display: flex;
+    justify-content: center;
   }
 
   img {
-    position: absolute;
     width: 5rem;
     height: 5rem;
   }
 
   p {
-    position: absolute;
-    max-width: 25rem;
     font-size: 1.6rem;
-    text-align: center;
 
     a {
       color: #e66465;
@@ -54,52 +69,68 @@ export const LineItem = styled.div`
   }
 
   &:nth-child(odd) {
-    top: -8rem;
-    p {
-      transform: translate(-38%, calc(-100% - 1rem));
-    }
-    span {
-      top: 7.6rem;
-      left: 2rem;
-      p {
-        top: 0.5rem;
-      }
+    margin-top: -16rem;
+
+    span p {
+      margin-top: -2.2rem;
     }
   }
 
   &:nth-child(even) {
-    top: 4rem;
-    p {
-      transform: translate(-38%, 6rem);
+    margin-top: 9rem;
+
+    span p {
+      margin-top: 1.5rem;
     }
+  }
+
+  @media screen and (max-width: 700px) {
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 4rem;
+    text-align: left;
+    width: 30rem;
+
     span {
-      top: -4.4rem;
-      left: 2rem;
+      bottom: initial;
+      left: -0.4rem;
+      transform: translateY(-1rem);
+
       p {
-        top: -4rem;
+        margin-top: 4rem;
+        width: 4rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
       }
     }
-  }
 
-  &:nth-child(1) {
-    left: 10%;
-  }
+    img {
+      margin-right: 2rem;
+    }
 
-  &:nth-child(2) {
-    left: 35%;
-  }
+    &:nth-child(odd) {
+      margin-top: 0;
 
-  &:nth-child(3) {
-    left: 60%;
-  }
-  &:nth-child(4) {
-    left: 85%;
+      span p {
+        margin-top: 2rem;
+      }
+    }
+
+    &:nth-child(even) {
+      margin-top: 0;
+
+      span p {
+        margin-top: 2rem;
+      }
+    }
   }
 `;
 
 export const Waves = styled.div`
   margin: 0rem -30%;
-
   position: absolute;
   bottom: -130%;
   left: 0;
@@ -117,5 +148,10 @@ export const Waves = styled.div`
 
   .shape-fill {
     fill: #e66465;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 130%;
+    bottom: -90%;
   }
 `;

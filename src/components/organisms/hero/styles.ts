@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  margin: 15rem 0;
+  margin: 10rem 0 15rem 0;
   display: flex;
   position: relative;
   align-items: center;
@@ -23,19 +23,32 @@ export const Background = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  @media screen and (max-width: 700px) {
+    width: 130%;
+    left: -15%;
+    right: -15%;
+  }
 `;
 
 export const ImageWrapper = styled.div`
   display: flex;
   margin-right: 10rem;
-`;
 
-export const Img = styled.img`
-  width: 28rem;
-  height: 28rem;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 2px 5px 25px rgba(108, 99, 255, 0.3);
+  img {
+    width: 30rem;
+    height: 40rem;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin-right: 2rem;
+    img {
+      width: 15rem;
+      height: 18rem;
+    }
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -46,6 +59,10 @@ export const TextWrapper = styled.div`
 export const Title = styled.h1`
   font-size: 4.2rem;
   margin-bottom: 3rem;
+
+  @media screen and (max-width: 700px) {
+    font-size: 3.2rem;
+  }
 `;
 
 export const Subtitle = styled.h3`
@@ -53,5 +70,15 @@ export const Subtitle = styled.h3`
   line-height: 4rem;
   grid-column-start: 1;
   grid-column-end: 3;
-  margin-bottom: 2rem;
+
+  @media screen and (max-width: 700px) {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+`;
+
+export const SubtitlePrimary = styled.span`
+  /* color: #e3e278; */
+  color: #71f580;
+  -webkit-text-stroke: 1px rgba(259, 259, 259, 0.2);
 `;
