@@ -103,7 +103,7 @@ export const LineItem = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: white;
+        background-color: #fcfcfc;
       }
     }
 

@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
 		},
 		"ionic": {
 			title: "Ionic",
-			description: "Utilizei o Ionic + Cordova para realizar diversos projetos mobiles. Só de redes sociais, foram 3! Eram projetos bem complexos, onde era possível postar fotos e vídeos, marcar pessoas, curtir e comentar. Alguns eram mais voltados para área de treinamento de funcionários, com uma gameficação do aprendizado de novos produtos e engajamento dos colaboradores."
+			description: "Utilizei o Ionic + Cordova para realizar diversos projetos mobiles. Eram projetos bem complexos, onde era possível postar fotos e vídeos, marcar pessoas, curtir e comentar. Alguns eram mais voltados para área de treinamento de funcionários, com uma gameficação do aprendizado de novos produtos e engajamento dos colaboradores."
 		},
 		"angular": {
 			title: "Angular",
