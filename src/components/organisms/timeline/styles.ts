@@ -132,7 +132,7 @@ export const LineItem = styled.div`
 export const Waves = styled.div`
   margin: 0rem -30%;
   position: absolute;
-  bottom: -130%;
+  bottom: -112%;
   left: 0;
   width: 160%;
   overflow: hidden;
