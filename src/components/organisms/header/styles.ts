@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  padding: 2rem 30%;
-  margin: 0 -30%;
   display: flex;
-  /* justify-content: space-between; */
   justify-content: flex-end;
   align-items: center;
-  /* background-color: rgba(0, 0, 0, 0.4); */
+  padding: 2rem 15%;
+  max-width: 100%;
 `;
 
 export const Link = styled.a`

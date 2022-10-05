@@ -19,17 +19,8 @@ html {
 
 body {
     box-sizing: border-box;
-    /* font-family: 'Nunito', sans-serif; */
     font-family: 'Sen', sans-serif;
     background-color: #fcfcfc;
     color: #05012e;
-    padding: 0 15%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
-
-@media screen and (max-width: 700px) {
-
-    body{
-        padding: 0 2rem;
-    }
-  }

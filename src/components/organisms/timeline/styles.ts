@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  margin: 5rem 0 20rem;
   position: relative;
+  padding: 5rem 15% 0 15%;
 
   @media screen and (max-width: 700px) {
     margin-bottom: 0;
+    padding: 5rem 2rem 0 2rem;
   }
 `;
 
@@ -132,11 +133,10 @@ export const LineItem = styled.div`
 `;
 
 export const Waves = styled.div`
-  margin: 0rem -30%;
   position: absolute;
   bottom: -28rem;
   left: 0;
-  width: 160%;
+  width: 100%;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
@@ -149,7 +149,7 @@ export const Waves = styled.div`
   }
 
   .shape-fill {
-    fill: #e66465;
+    fill: #9198e5;
   }
 
   @media screen and (max-width: 700px) {

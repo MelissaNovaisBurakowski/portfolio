@@ -1,33 +1,36 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
+  padding: 0 15%;
   margin: 10rem 0 15rem 0;
   display: flex;
   position: relative;
   align-items: center;
   color: #fff;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
 `;
 
 export const Background = styled.div`
   position: absolute;
   z-index: -99;
   top: -25rem;
-  left: -30%;
-  right: -30%;
-  width: 160%;
+  left: 0;
+  right: 0;
   height: 100rem;
-  filter: blur(10px) contrast(110%);
+  overflow: hidden;
 
   img {
-    width: 100%;
+    width: 110%;
     height: 100%;
+    margin-left: -5%;
     object-fit: cover;
-  }
-
-  @media screen and (max-width: 700px) {
-    width: 130%;
-    left: -15%;
-    right: -15%;
+    filter: blur(10px) contrast(115%);
   }
 `;
 
@@ -38,12 +41,12 @@ export const ImageWrapper = styled.div`
   img {
     width: 30rem;
     height: 40rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     object-fit: cover;
   }
 
   @media screen and (max-width: 700px) {
-    margin-right: 2rem;
+    margin: auto;
     img {
       width: 15rem;
       height: 18rem;
@@ -62,6 +65,7 @@ export const Title = styled.h1`
 
   @media screen and (max-width: 700px) {
     font-size: 3.2rem;
+    margin-top: 3rem;
   }
 `;
 

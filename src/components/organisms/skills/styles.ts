@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  margin: 0 -30% 8rem -30%;
-  padding: 5rem 30% 10rem 30%;
   display: flex;
   /* background: linear-gradient(#e66465, #9198e5); */
   background-color: #e66465;
