@@ -5,7 +5,10 @@ export const Header = styled.header`
   justify-content: flex-end;
   align-items: center;
   padding: 2rem 15%;
-  max-width: 100%;
+
+  @media screen and (max-width: 700px) {
+    padding: 2rem;
+  }
 `;
 
 export const Link = styled.a`

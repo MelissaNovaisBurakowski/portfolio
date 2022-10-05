@@ -79,6 +79,7 @@ const Skills: React.FC = () => {
 						{Object.values(SkillOptions).map((skillKey) => (
 							<li key={skillKey}>
 								<input type="radio" id={skillKey} name="skill" value={skillKey} checked={selectedSkill === skillKey} onChange={() => changeSelectedSkill(skillKey)} />
+								<span />
 								<label htmlFor={skillKey} >
 									<img src={skills[skillKey].image} alt={`${skillKey} logo`} />
 									<p>{skillKey}</p>

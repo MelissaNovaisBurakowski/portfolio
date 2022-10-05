@@ -16,7 +16,7 @@ export const Section = styled.section`
 
 export const Subtitle = styled.h3`
   font-size: 2.8rem;
-  margin-bottom: 3rem;
+  margin: 2rem 0 4rem 0;
   width: 100%;
   display: block;
   color: white;
@@ -27,13 +27,18 @@ export const Card = styled.div`
   display: flex;
   background-color: white;
   width: 100%;
-  max-width: 100rem;
+  max-width: 90rem;
+  height: 50rem;
   border-radius: 0.6rem;
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
   padding: 3rem;
   overflow: hidden;
   position: relative;
   font-size: 2rem;
+
+  @media screen and (max-width: 700px) {
+    height: 65rem;
+  }
 `;
 
 export const Aside = styled.aside`
@@ -51,9 +56,15 @@ export const Aside = styled.aside`
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
+    position: relative;
 
     input {
       display: none;
+    }
+
+    input:checked + span {
+      opacity: 1;
+      height: 3rem;
     }
 
     label {
@@ -67,6 +78,17 @@ export const Aside = styled.aside`
       width: 3rem;
       height: 3rem;
       margin-right: 1rem;
+    }
+
+    span {
+      clip-path: polygon(0 50%, 100% 100%, 100% 0);
+      width: 3rem;
+      position: absolute;
+      right: -4rem;
+      background-color: white;
+      opacity: 0;
+      height: 0rem;
+      transition: all 0.2s ease-in-out;
     }
   }
 
@@ -95,7 +117,7 @@ export const SkillDetails = styled.div`
   }
 
   p {
-    line-height: 3rem;
+    line-height: 4rem;
     margin-top: 2rem;
   }
 
