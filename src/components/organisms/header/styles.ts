@@ -5,6 +5,8 @@ export const Header = styled.header`
   justify-content: flex-end;
   align-items: center;
   padding: 2rem 15%;
+  position: relative;
+  z-index: 99;
 
   @media screen and (max-width: 700px) {
     padding: 2rem;
@@ -20,22 +22,37 @@ export const Link = styled.a`
 
   &:hover {
     text-decoration: underline;
-    color: #e66465;
+    color: var(--primary);
+  }
+
+  & svg {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+`;
+
+export const LogoLink = styled.a`
+  svg {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    color: var(--primary);
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 `;
 
 export const HeaderIcons = styled.div`
   display: flex;
-`;
-
-export const Icon = styled.img`
-  width: 3rem;
-  height: 3rem;
-  margin-left: 1rem;
-  cursor: pointer;
-  transition: all 0.1s ease-in;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 `;

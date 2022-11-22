@@ -1,4 +1,8 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { fadeInDown, fadeInUp } from "react-animations";
+
+const fadeInDownAnimation = keyframes`${fadeInDown}`;
+const fadeInUpAnimation = keyframes`${fadeInUp}`;
 
 export const Section = styled.section`
   position: relative;
@@ -15,13 +19,13 @@ export const Subtitle = styled.h3`
   font-size: 2.8rem;
   line-height: 4rem;
   margin-bottom: 2rem;
-  color: #e66465;
+  color: var(--primary);
 `;
 
 export const Line = styled.div`
   height: 0.3rem;
   width: 100%;
-  background-color: rgba(113, 245, 128, 0.3);
+  background-color: var(--neutral-light);
   border-radius: 1rem;
   margin: 18rem 0;
   display: flex;
@@ -48,7 +52,7 @@ export const LineItem = styled.div`
   span {
     width: 1rem;
     height: 1rem;
-    background-color: #71f580;
+    background-color: var(--primary);
     border-radius: 50%;
     position: absolute;
     bottom: -0.4rem;
@@ -56,23 +60,35 @@ export const LineItem = styled.div`
     justify-content: center;
   }
 
-  img {
+  img,
+  svg {
     width: 5rem;
     height: 5rem;
+    flex-shrink: 0;
+    color: var(--primary-light);
   }
 
   p {
     font-size: 1.6rem;
 
     a {
-      color: #e66465;
+      color: var(--primary);
       font-style: italic;
       text-decoration: none;
     }
   }
 
   &:nth-child(odd) {
-    margin-top: -16rem;
+    margin-top: -17rem;
+
+    svg,
+    svg + p {
+      animation: 1s ${fadeInDownAnimation};
+    }
+
+    svg {
+      margin-bottom: 1rem;
+    }
 
     span p {
       margin-top: -2.2rem;
@@ -84,6 +100,11 @@ export const LineItem = styled.div`
 
     span p {
       margin-top: 1.5rem;
+    }
+
+    svg,
+    svg + p {
+      animation: 1s ${fadeInUpAnimation};
     }
   }
 
@@ -110,7 +131,7 @@ export const LineItem = styled.div`
       }
     }
 
-    img {
+    svg {
       margin-right: 2rem;
     }
 
@@ -149,7 +170,7 @@ export const Waves = styled.div`
   }
 
   .shape-fill {
-    fill: #9198e5;
+    fill: var(--secondary-gradient);
   }
 
   @media screen and (max-width: 700px) {

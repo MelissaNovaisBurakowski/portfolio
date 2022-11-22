@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 5rem 15% 15rem 15%;
-  background: linear-gradient(#e66465, #9198e5);
-  /* background-color: #e66465; */
+
+  padding: 15rem 15% 15rem 15%;
+  background: linear-gradient(
+    var(--primary-gradient),
+    var(--secondary-gradient)
+  );
   position: relative;
 
   @media screen and (max-width: 700px) {
@@ -17,34 +19,31 @@ export const Section = styled.section`
 export const Subtitle = styled.h3`
   font-size: 2.8rem;
   margin: 2rem 0 4rem 0;
-  width: 100%;
   display: block;
   color: white;
-  text-align: center;
+  text-align: left;
 `;
 
 export const Card = styled.div`
   display: flex;
   background-color: white;
   width: 100%;
-  max-width: 90rem;
-  height: 50rem;
   border-radius: 0.6rem;
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
   padding: 3rem;
   overflow: hidden;
   position: relative;
   font-size: 2rem;
+  z-index: 99;
 
   @media screen and (max-width: 700px) {
-    height: 65rem;
+    min-height: 65rem;
   }
 `;
 
 export const Aside = styled.aside`
   margin-right: 1rem;
-  //TODO cahnge color
-  background-color: #ffe2e2;
+  background-color: var(--neutral-light);
   margin: -3rem 0 -3rem -3rem;
   padding: 3rem;
   z-index: 9;
@@ -114,6 +113,7 @@ export const SkillDetails = styled.div`
 
   h5 {
     font-size: 2.4rem;
+    color: var(--primary);
   }
 
   p {
