@@ -1,8 +1,8 @@
 import React from "react";
 import * as S from "./styles"
-import github from "../../../assets/github.svg";
-import medium from "../../../assets/medium.svg";
-import linkedin from "../../../assets/linkedin.svg";
+import { ReactComponent as GithubLogo } from "../../../assets/github.svg";
+import { ReactComponent as LinkedInLogo } from "../../../assets/linkedin.svg";
+// import medium from "../../../assets/medium.svg";
 
 const Header: React.FC = () => {
 	return (
@@ -12,12 +12,12 @@ const Header: React.FC = () => {
 				<S.Link href="#" target="_blank">Timeline</S.Link>
 			</div> */}
 			<S.HeaderIcons>
-				<a href="https://www.linkedin.com/in/melissa-novais-0bb203151/" target="_blank">
-					<S.Icon src={linkedin} />
-				</a>
-				<a href="https://github.com/MelissaNovaisBurakowski" target="_blank">
-					<S.Icon src={github} />
-				</a>
+				<S.LogoLink href="https://www.linkedin.com/in/melissa-novais-0bb203151/" target="_blank">
+					<LinkedInLogo />
+				</S.LogoLink>
+				<S.LogoLink href="https://github.com/MelissaNovaisBurakowski" target="_blank">
+					<GithubLogo />
+				</S.LogoLink>
 				{/* <a href="https://medium.com/@mf.novais.98" target="_blank">
 					<S.Icon src={medium} />
 				</a> */}
