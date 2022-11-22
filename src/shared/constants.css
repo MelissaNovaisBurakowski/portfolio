@@ -1,0 +1,21 @@
+html {
+  --primary: #73A9AD;
+  --primary-dark: #5e9296;
+  --primary-light: #90C8AC;
+  
+
+  --primary-gradient: #C4DFAA  ;
+  --secondary-gradient: #90C8AC;
+  
+
+  --secondary: #F5F0BB;
+
+
+
+  --info-light: #f0fdf4;
+  --info: #367b50;
+
+  --grey: #ccc;
+  --neutral-light: #f5f5f5;
+
+}

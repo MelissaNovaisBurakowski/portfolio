@@ -22,5 +22,6 @@ body {
     font-family: 'Sen', sans-serif;
     background-color: #fcfcfc;
     color: #05012e;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
+
